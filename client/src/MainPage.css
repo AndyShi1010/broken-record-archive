@@ -1,0 +1,56 @@
+#app-container {
+    display: grid;
+    grid-template-columns: min-content auto;
+}
+
+#sidenav {
+    grid-column: 1 / 1;
+    transition: transform 0.2s, opacity 0.2s, width 0.2s;
+    transform-origin: center left;
+    z-index: 10;
+    /* background-color: aquamarine; */
+    overflow-x: hidden;
+    width: 16rem;
+    /* height: 100%; */
+}
+
+.main-content {
+    grid-column: 2 / 3;
+}
+
+.hamburger {
+    background-color: white;
+    transition: background-color 0.2s;
+}
+
+.hamburger:hover{
+    background-color: #eee;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.hidden-nav {
+    width: 0px !important;
+    transform: translate(-16rem) !important;
+    opacity: 0 !important;
+    /* display: none !important; */
+}
+
+#instvis-panel {
+    display: grid;
+    grid-template-rows: auto min-content;
+}
+
+.p5Canvas {
+    display: block;
+}
+
+/* .flex-visfooter {
+    flex: 0 1 40px;
+} */
+
+.switch {
+    
+}

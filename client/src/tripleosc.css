@@ -1,0 +1,57 @@
+.tripleosckey {
+    margin-left: -1rem;
+}
+
+.tripleosckey:nth-child(12n + 1) {
+    margin-left: 0rem;
+}
+
+.tripleosckey:nth-child(12n + 6) {
+    margin-left: 0rem;
+}
+
+.tripleosckey:first-of-type {
+    margin-left: 0;
+}
+
+.slider {
+    -webkit-appearance: none;  
+    appearance: none;
+    width: 128px;
+    height: 24px; 
+    background: white; 
+    border: 0.125rem solid #eee;
+    outline: none; 
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    border: 0.125rem solid #CCCCCC;
+    background: #eee; 
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 24px; /* Set a specific slider handle width */
+    height: 24px; /* Slider handle height */
+    background: #999999; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 24px; /* Set a specific slider handle width */
+    height: 24px; /* Slider handle height */
+    background: #999999; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+    border-radius: 0;
+  }
+  
+
+  .hiddenCheck {
+    width: 0px;
+    height: 0px;
+    opacity: 0;
+    position: absolute;
+  }
